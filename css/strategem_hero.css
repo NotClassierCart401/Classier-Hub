@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'FS Sinclair Medium';
+    src: url('fonts/FS Sinclair Medium.otf') format('truetype');
+}
+
+html,body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(50,50,50);
+    font-family: 'FS Sinclair Medium';
+}
+
+#header {
+    background-color: #f8f9fa;
+    text-align: left;
+    font-size: xx-large;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255,255,0,1) 35%, rgba(0,0,0,1));
+}
+
+#header h1 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.8);
+    padding-left: 50px;
+    ;
+}
+
+#header img {
+    width: 100px;
+    height: 100px;
+    vertical-align:middle;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#desc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: large;
+}
+
+#desc div {
+    height: fit-content;
+    text-align: left;
+    color: lightgray;
+    margin: 2%;
+    padding: 1%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+#desc div p {
+    margin: 5px;
+}
+
+#download {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#download div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#download div button {
+    width: 50%;
+    height: 70%;
+    border: 3px solid rgba(0,0,0,0.5);
+    border-radius: 10px;    
+    background-color: yellow;
+    transition: 0.1s ease-in-out;
+}
+
+#download div button:hover {
+    background-color: #ff0;
+    filter: brightness(0.8);
+}
+
+#download div button:active {
+    transform: scale(0.95);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+}
+
+.htp {
+    width: 30%;
+}
+
+.controls-list {
+    list-style: none;
+    padding: 0;
+}
+
+.control-img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('images/strategem_hero/super_earth.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'FS Sinclair Medium';
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 900px) {
+    #header, #desc {
+        font-size: 10px;
+    }
+    #header img {
+        width: 50px;
+        height: 50px;
+    }
+    .htp {
+        width: 40%;
+    }
+    #download div button {
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #header h1 {
+        padding-left: 25px;
+    }
+    #download div button {
+        width: 90%;
+    }
+}
