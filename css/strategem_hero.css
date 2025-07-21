@@ -129,7 +129,7 @@ main::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('images/strategem_hero/super_earth.png');
+    background-image: url('../images/strategem_hero/super_earth.png');
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
