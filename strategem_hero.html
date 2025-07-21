@@ -41,12 +41,23 @@
                 </div>
             </section>
             <section id="download">
+                <div class="feedback">
+                    <p>Please enter any feedback such as improvement ideas, bug reports, etc.</p>
+                    <iframe name="noredirect" id="noredirect" style="display: none;"></iframe>
+                    <form id="feedback-form" action="https://script.google.com/macros/s/AKfycbwIv9e9lL_hIgtwutCNspxRphm6VvAdTBlxPRbC-gK1eOV_Qr1Re9UPFhtVfx2rbLr4/exec" target="noredirect" name="feedback form" method="POST">
+                        <label for="name">Name:</label>
+                        <input id="name" name="name" type="text" value=""><br><br>
+                        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
                 <div>
                     <a href="images/strategem_hero/strategem_hero.exe" download>
                         <button type="button">DOWNLOAD STRATEGEM HERO</button>
                     </a>
                 </div>
             </section>
+            <script src="js/strategem_hero.js"></script>
         </main>
     </body>
 </html>
