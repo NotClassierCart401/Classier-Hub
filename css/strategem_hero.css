@@ -123,6 +123,11 @@ html,body {
     outline: yellow solid 2px;
 }
 
+#download div a img {
+    width: 50px;
+    transform: scale(0.7);
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -227,6 +232,12 @@ button {
     }
 }
 
+@media screen and (max-width: 1114px) {
+    #download div a img {
+        width: 15%;
+    }
+}
+
 @media screen and (max-width: 425px) {
     #header h1 {
         padding-left: 25px;
@@ -234,6 +245,7 @@ button {
     #download div button {
         width: 90%;
     }
+
     .chbutton {
         padding: 2% 2%;
         font-size: large;
@@ -243,5 +255,5 @@ button {
 @media screen and (max-width: 333px) {
     #download div button {
         margin-top: 100px;
-    }    
+    }
 }
