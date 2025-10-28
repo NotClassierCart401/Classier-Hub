@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css\sw-xml-submissions.css">
+        <link rel="icon" href="images/favicons/classier_hub.ico" type="image/x-icon">
+        <title>SW AI Cargo Sumbission</title>
+    </head>
+    <body>
+        <div>
+            <button class="returnbtn" onclick="window.location.href='classierserver401.html'">Back</button>
+        </div>
+        <div>
+            <iframe name="noredirect" id="noredirect" style="display: none;"></iframe>
+            <form id="sw-xml-form" name="sw xml form">
+                <fieldset>
+                    <label for="name">File Name</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="uploadaixml">Upload Cargo AI XML</label>
+                    <input type="file" id="uploadaixml" name="file" required>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        <script src="js/sw-xml-submissions.js"></script>
+    </body>
+</html>

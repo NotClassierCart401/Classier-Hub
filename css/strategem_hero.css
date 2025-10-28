@@ -95,6 +95,11 @@ html,body {
     transition: 0.1s ease-in-out;
 }
 
+#download div button img {
+    background-color: rgba(50, 50, 50, 0.4);
+    box-shadow: 0 0 5px 11px rgba(40, 40, 40, 0.4);
+}
+
 #download div button:hover, input[type="submit"]:hover {
     background-color: #ff0;
     filter: brightness(0.8);
