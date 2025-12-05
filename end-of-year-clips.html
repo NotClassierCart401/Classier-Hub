@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css\end-of-year-clips.css">
+        <link rel="icon" href="images/favicons/classier_hub.ico" type="image/x-icon">
+        <title>End-Of-Year Clip Upload (2025)</title>
+    </head>
+    <body>
+        <div id="submittedoverlay">
+            <div class="main">
+                Files Submitted!
+                <div>
+                    <a href="index.html">Back to ClassierHub</a>
+                    <button onclick="overlayOff()">Back</button>
+                </div>
+            </div>
+        </div>
+        <div id="vidprev">
+            <div class="mainv">
+                
+            </div>
+        </div>
+        <header>
+            <button class="chbutton" onclick="window.location.href='index.html'">Back to Classier Hub</button>
+            End of Year Video 2025
+        </header>
+        <section>
+            <div>
+                <p>Got any funny or epic clips from this year? Clips sent will be combined into one video that will be posted near New Years.</p>
+            </div>
+        </section>
+        <section>
+            <iframe name="noredirect" id="noredirect" style="display: none;"></iframe>
+            <form id="eoyc-sub" name="end-of-year-vid-submission">
+                <fieldset>
+                    <label for="uploadvideo">Upload Video</label>
+                    <input accept="video/*" type="file" id="uploadvideo" name="file" required multiple>
+                    <label for="name">Your Name<br>(If you have already submitted at least one clip, it is recommended to type the same name exactly)</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="sub">Submit</label>
+                    <input id="sub" type="submit" value="Submit">
+                </fieldset>
+                <div class="line"></div>
+                <div id="prev"></div>
+            </form>
+        </section>
+        <script src="js/end-of-year-clips.js"></script>
+    </body>
+</html>
