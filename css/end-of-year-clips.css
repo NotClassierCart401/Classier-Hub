@@ -1,0 +1,250 @@
+html,body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 3000px;
+    right: 0;
+    bottom: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: #f8f9fa;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family:'Gill Sans';
+    width: 100%;
+    height: 150px;
+    min-height: 150px;
+    text-shadow: rgba(200, 200, 200, 1) 0em 0em 0.5em;
+    color: hsl(45, 0%, 60%);
+}
+
+.chbutton {
+    position: relative;
+    height: 30px;
+    width: 200px;
+    background-color: hsl(50, 60%, 90%);
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.chbutton:hover {
+    background-color: hsl(50, 60%, 80%);
+    transform: scale(1.02);
+}
+
+section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+form {
+    width: 70%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid hsl(45, 30%, 70%);
+    background-color:hsl(45, 70%, 97%);
+}
+
+fieldset {
+    height: inherit;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+label[for="uploadvideo"] {
+    text-align: center;
+    align-content: center;
+    height: 125px;
+    width: 255px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: hsl(45, 100%, 90%);
+    border: 4px dotted hsl(45, 30%, 70%);
+    border-radius:15px;
+    font-weight: 900;
+    font-size: x-large;
+    color: hsl(45, 50%, 50%, 0.3);
+}
+
+label[for="uploadvideo"]:hover {
+    border: 4px dashed hsl(200, 50%, 50%);
+}
+
+label[for="sub"]:hover {
+    border: 2px solid hsl(200, 50%, 50%);
+}
+
+label[for="uploadvideo"]:hover, label[for="sub"]:hover {
+    cursor: pointer;
+}
+
+label[for="sub"] {
+    height: 30px;
+    width: 70px;
+    background-color: hsl(45, 100%, 90%);
+    border: 2px solid hsl(45, 30%, 70%);
+    border-radius: 7px;
+    align-content: center;
+    
+}
+
+label[for="uploadvideo"], input[id="name"], label[for="sub"] {
+    transition: 0.1s ease-in-out;
+}
+
+input[id="uploadvideo"], input[id="sub"] {
+    display: none;
+}
+
+input[id="name"] {
+    background-color: hsl(45, 30%, 70%);
+    transition: 0.1s ease-in-out;
+}
+
+input[id="name"]:hover {
+    border: 2px dashed hsl(200, 50%, 50%);
+}
+
+input[id="name"]:focus {
+    background-color: hsl(45, 100%, 90%);
+}
+
+#prev {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    text-align: left;
+    overflow: auto;
+}
+
+.line {
+    height: 85%;
+    width: 2px;
+    background-color: hsl(45, 60%, 90%);
+}
+
+.deleteBtn {
+    background-color: rgba(200, 84, 84, 1);
+    border: 3px solid black;
+    border-radius: 100px;
+    font-size: large !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(143, 64, 64);
+}
+
+#submittedoverlay, #vidprev {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+}
+
+#submittedoverlay .main, #vidprev .mainv {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 600px;
+    border-radius: 80px;
+    background-color: hsl(60, 45%, 90%, 0.6);
+    border: 5px solid hsl(50, 30%, 90%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 00px 150px 5px hsl(50, 10%, 80%);
+    text-align: center;
+    align-content: center;
+}
+
+#vidprev .mainv {
+    display: block;
+    align-content: baseline;
+    height: 80% !important;
+    width: 80% !important;
+    background-color: hsl(60, 10%, 40%, 0.6) !important;
+    border: 5px solid hsl(50, 30%, 90%, 0.7) !important;
+    padding-top: 10px;
+}
+
+#submittedoverlay div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: xx-large;
+    color: rgba(45, 45, 45);
+}
+
+#submittedoverlay a, #submittedoverlay button {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    height: 75px;
+    width: 250px;
+    background-color: hsl(50, 30%, 90%);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: large;
+    transition: 0.1s ease-in-out;
+}
+
+#submittedoverlay a:hover, #submittedoverlay button:hover {
+    background-color: hsl(50, 20%, 70%);
+}
+
+.vidname {
+    cursor: pointer;
+}
+
+.vidname:hover {
+    text-decoration: underline;
+}

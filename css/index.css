@@ -94,12 +94,19 @@ html,body {
     text-align: center;
     font-size: 1.2em;
     color: #333;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 10px;
+    min-height: 50px;
+    align-content: center;
+    text-decoration: underline;
+    background-color: rgb(230, 220, 210);
 }
 
 .card:hover {
     transform: scale(1.05);
+    background-color: rgb(250, 235, 200);
+}
+.card:hover .card-text{
     background-color: wheat;
 }
 
@@ -130,8 +137,43 @@ html,body {
 }
 
 .base{
-    transform: translateZ(0px) scale(1);
+    transform: translateZ(0px) translateY(-30px) scale(1);
     z-index: 1;
     position: relative;
     background-color: floralwhite;
+
+}
+
+
+#eoyc {
+    height: 50px;
+    z-index: 100000;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, rgb(210,220,255), white, rgb(230,255,230));
+}
+
+#eoyc div {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 300px;
+    justify-content:space-evenly;
+}
+
+#eoyc div a {
+    height: 90%;
+    width: 15%;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    align-content: center;
+    text-align: center;
+    transition: 0.1s ease-in-out;
+}
+
+#eoyc div a:hover {
+    background-color: wheat;
 }
