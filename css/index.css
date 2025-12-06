@@ -144,7 +144,6 @@ html,body {
 
 }
 
-
 #eoyc {
     height: 50px;
     z-index: 100000;
@@ -159,12 +158,25 @@ html,body {
     flex-direction: row;
     align-items: center;
     padding-right: 300px;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 750px) {
+    #eoyc div {
+        padding-right: 30px;
+        font-size: xx-small;
+    }
+    #eoyc div a {
+        width: 100px;
+    }
+    .base {
+        transform: translateZ(0px) translateY(-50px) scale(1);
+    }
 }
 
 #eoyc div a {
     height: 90%;
-    width: 15%;
+    width: 200px;
     background-color: blanchedalmond;
     border-radius: 5px;
     text-decoration: none;
