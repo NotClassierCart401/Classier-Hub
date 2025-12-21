@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const base64 = reader.result.split(",")[1];
           console.log("Folder name being sent:", sendername.value);
           try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbw9vgE9nmKWXhaa03O2at4sZCZeNRYdfMtQoyP3wi9wOnMpxbDPVlDKVETAydrAyQcS/exec", {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbwiXB4YlFEjc6VHcBhETxy4Jsc-6KPnJIzLYkwfTBrORdiq8sD0DTcwks6sDDIPnM0/exec", {
               method: "POST",
               body: JSON.stringify({
                 name: sendername,
