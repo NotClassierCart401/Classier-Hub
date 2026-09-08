@@ -1,3 +1,12 @@
+:root {
+    --field-bg: hsl(225, 70%, 95%);
+    --field-border: hsl(225, 10%, 55%);
+    --input-bg: hsl(225, 40%, 70%);
+    --input-border: darkslategray;
+    --input-bg-active: hsl(225, 20%, 90%);
+    --input-border-active: hsl(225, 25%, 60%);
+}
+
 html,body {
     position: absolute;
     top: 0;
@@ -16,8 +25,54 @@ html,body {
 }
 
 form {
-    padding-left: 50px;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 250px;
+    border-radius: 100px;
+    background-color: var(--input-bg);
+    border: 2px solid var(--input-border);
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: text;
+}
+
+input:focus, input[type="submit"]:hover, label[for="uploadaixml"]:hover {
+    background-color: var(--input-bg-active);
+    border-color: var(--input-border-active);
+}
+
+input, label[for="uploadaixml"] {
+    height: 50px;
+    width: 65px;
+    background-color: hsl(225, 40%, 70%);
+    border-radius: 7px;
+    border: 2px solid darkslategray;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label[for="uploadaixml"] {
+    content: url(../images/upload.svg);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+input, label {
+    transition: 0.2s ease;
 }
 
 .instructions {
@@ -31,12 +86,18 @@ form {
 }
 
 fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-height: 50px;
     width: 40%;
     border-radius: 10px;
-    background-color: lightblue;
-    border: 2px solid darkcyan;
+    background-color: hsl(225, 70%, 95%);
+    border: 2px solid hsl(225, 10%, 55%);
 }
 
 .returnbtn {

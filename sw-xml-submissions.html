@@ -5,29 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css\sw-xml-submissions.css">
         <link rel="icon" href="images/favicons/classier_hub.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>SW AI Cargo Sumbission</title>
     </head>
     <body>
         <div>
             <button class="returnbtn" onclick="window.location.href='classierserver401.html'">Back</button>
         </div>
-        <div style="margin-left: 70px;">
-            Your ship must follow these guidelines:
+        <div class="instructions">
+            <p>Your ship must follow these guidelines:</p>
             <li>The <b>helm/control seat</b> must be named <b>"Captain"</b> and have the AI set to <b>Ship Pilot</b></li>
             <li>The ship must have <b>2 fuel tanks</b> named <b>diesel1</b> and <b>diesel2</b> and a <b>battery</b> named <b>battery1</b></li>
             <li>There must be exactly <b>1</b> spot for a <b>container</b> with 4 electrical connectors at each end. The area should be a <b>11x29</b> (or just use the preset container)</li>
             <li><b>W/S</b> should control <b>engine throttle</b>, <b>A/D</b> should control <b>steering</b>, and <b>1</b> should be the engine <b>starter</b></li>
             <li>Any seats on the boat that NPCs should sit in must be named <b>Seat</b></li>
         </div>
+        <br>
         <div>
             <iframe name="noredirect" id="noredirect" style="display: none;"></iframe>
             <form id="sw-xml-form" name="sw xml form">
                 <fieldset>
                     <label for="name">File Name</label>
                     <input type="text" id="name" name="name" required><br>
-                    <label for="uploadaixml">Upload Cargo AI XML</label>
-                    <input type="file" id="uploadaixml" name="file" required>
-                    <input type="submit" value="Submit">
+                    <p>Upload Cargo AI XML</p>
+                    <div id="filename_txt" style="display: flex; flex-direction: column; align-items: center;">
+                        <label id="uploadlabel" for="uploadaixml"></label>
+                    </div>
+                    <input type="file" id="uploadaixml" name="file" required><br>
+                    <input id="sub" type="submit" value="Submit">
                 </fieldset>
             </form>
         </div>

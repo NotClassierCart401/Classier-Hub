@@ -1,5 +1,18 @@
+let uploader = document.getElementById("uploadaixml")
+let upld_name_txt = document.createElement("span")
+
+uploader.addEventListener("change", () => {
+  var uploaded_file = uploader.files[0]
+  const reader = new FileReader()
+  upld_name_txt.innerText = uploaded_file.name
+  upld_name_txt.className = "upload_span"
+  document.getElementById("filename_txt").appendChild(upld_name_txt)
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const fbform = document.getElementById("sw-xml-form");
+
+
 
   fbform.addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -17,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       formBody.append("xml", base64);
 
       try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbzlq5u8zk573gcHjyTOZ_MuEyw5bVZPmT4_vuGov0cNhTijbjppFjJcrlLPsCKxUE5QYg/exec", {
+        const response = await fetch("https://script.google.com/macros/s/AKfycby2alZEsQ71c5WU8GXeG70SHs5Y4H14wnCWr_H4-Yyun0vLvaeZcQulcgFsaO6hcCG2fg/exec", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: formBody.toString()
