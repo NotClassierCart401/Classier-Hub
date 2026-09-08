@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Blender, SVG Export for Grease Pencil - v2.1 -->
+
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="172.90991"
+   height="151.66046"
+   viewBox="0 0 172.90991 151.66046"
+   id="svg5"
+   sodipodi:docname="download.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4"
+     inkscape:cx="68.75"
+     inkscape:cy="42.875"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="blender_object.Plane.1.uuid_0x0" />
+  <g
+     id="blender_frame.1"
+     transform="translate(-10,-10)">
+    <g
+       id="blender_object.Plane.1.uuid_0x0">
+      <g
+         id="layer.Layer.uuid_0x2">
+        <path
+           d="m 55.40674,64.974945 -0.11951,0.149905 -0.08319,0.1727 -0.0426,0.186886 v 0.191684 l 0.0426,0.186826 0.08319,0.172699 0.11951,0.149905 40.44299,40.44287 0.14978,0.1195 0.17273,0.0832 0.18689,0.0426 h 0.19165 l 0.18689,-0.0426 0.17273,-0.0832 0.14984,-0.1195 40.44293,-40.44287 0.11945,-0.149905 0.0832,-0.172699 0.0426,-0.18689 v -0.191681 l -0.0426,-0.186825 -0.0832,-0.1727 -0.11945,-0.149905 -13.29754,-13.297485 -0.14991,-0.119507 -0.1726,-0.08319 -0.18689,-0.04263 h -0.19171 l -0.18689,0.04263 -0.17267,0.08319 -0.14984,0.119507 -16.28144,16.2814 V 10.856018 l -0.0215,-0.190491 -0.0633,-0.180908 -0.10199,-0.162292 -0.1355,-0.135559 -0.16229,-0.10199 -0.18097,-0.06329 L 105.85773,10 H 87.052185 l -0.19043,0.02148 -0.180969,0.06329 -0.162296,0.10199 -0.135555,0.135559 -0.10199,0.162292 -0.06329,0.180908 -0.02148,0.190491 V 67.95886 L 69.914856,51.67746 69.76495,51.557953 69.592224,51.474762 69.405396,51.43213 h -0.191712 l -0.186829,0.04263 -0.172729,0.08319 -0.149906,0.119507 z"
+           fill="#000000"
+           stroke="none"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           id="path1"
+           sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+        <path
+           d="m 164.93414,97.35834 -0.19055,0.02148 -0.18085,0.06333 -0.16229,0.101959 -0.13562,0.135525 -0.10193,0.16233 -0.0634,0.180905 -0.0214,0.19046 v 38.788361 l -5.82611,5.82601 H 34.657776 l -5.825989,-5.82601 V 98.214325 L 28.810364,98.023865 28.74701,97.84296 28.64502,97.68063 28.509521,97.545105 28.347229,97.443146 28.16626,97.37982 27.975769,97.35834 H 10.856018 l -0.190491,0.02148 -0.180908,0.06333 -0.162353,0.101959 -0.135498,0.135525 -0.10199,0.16233 -0.06329,0.180905 L 10,98.214325 v 46.234195 l 0.02918,0.22155 0.08557,0.20646 0.135986,0.17727 16.355958,16.35599 0.177307,0.13601 0.206482,0.0855 0.221557,0.0291 h 138.4859 l 0.22149,-0.0292 0.20649,-0.0855 0.17724,-0.13601 16.35596,-16.35599 0.13605,-0.17727 0.0856,-0.20646 0.0292,-0.22155 V 98.214325 l -0.0215,-0.19046 -0.0634,-0.180905 -0.10193,-0.16233 -0.13562,-0.135525 -0.16217,-0.101959 -0.18097,-0.06333 -0.19048,-0.02148 z"
+           fill="#000000"
+           stroke="none"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           id="path2"
+           sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+      </g>
+    </g>
+  </g>
+</svg>
