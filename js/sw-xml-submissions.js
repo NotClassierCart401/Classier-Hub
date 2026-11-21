@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Response:", responseText);
         alert("File sent!");
         fbform.reset();
+        document.getElementById("filename_txt").removeChild(upld_name_txt)
       } catch (err) {
         console.error("Submission failed:", err);
       }

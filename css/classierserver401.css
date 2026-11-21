@@ -32,6 +32,10 @@ html,body {
     color:lavenderblush;
     box-shadow: 0px 5px 10px 0px slategrey;
 }
+#header h1 {
+    margin: 0;
+    margin-left: 100px;
+}
 
 #main header {
     text-align: left;

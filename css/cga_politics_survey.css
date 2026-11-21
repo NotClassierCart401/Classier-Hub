@@ -1,0 +1,252 @@
+:root {
+    --cls-header: hsl(215, 45%, 20%);
+    --cls-cream: hsl(40, 20%, 95%);
+    --cls-lightcream: hsl(40, 20%, 90%);
+}
+
+html,body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 3000px;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(30, 15%, 95%);
+}
+
+#header {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: var(--cls-header);
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+    font-size: xx-large;
+    width: 100%;
+    height: 75px;
+    min-height: 75px;
+    color:lavenderblush;
+    box-shadow: 0px 5px 10px 0px slategrey;
+}
+#header h1 {
+    margin: 0;
+    margin-left: 100px;
+    font-family: inherit;
+}
+#header a {
+    margin-left: 3%;
+}
+
+#home_btn {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-height: 75%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    font-size: large;
+    width: 100%;
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cls-cream);
+    border-radius: 20px;
+    border: 3px solid var(--cls-lightcream);
+    box-shadow:  0px 0px 10px 1px var(--cls-lightcream);
+}
+
+.outter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+fieldset #sliders {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input[type="range"] {
+    cursor: pointer;
+    appearance: none;
+    height: 10px;
+    width: 100%;
+    border-radius: 50px;
+    background: gray
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    cursor: grab;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: gray;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    cursor: grabbing;
+    filter: brightness(0.8);
+}
+
+.ideology_pie {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid gray;
+}
+
+#submit_div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+input[type="submit"] {
+    width: 250px;
+    height: 65px;
+    margin: 10px;
+    color: white;
+    font-size: large;
+    background-color: var(--cls-header);
+    border-radius: 100px;
+    border: 3px solid hsl(210, 30%, 10%);
+    transition: 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    filter: brightness(1.5);
+}
+
+
+@media screen and (max-width: 1284px) {
+    #header {
+        font-size: larger;
+        display: flex;
+        flex: row;
+        justify-content: left;
+        
+    }
+    #header h1 {
+        margin-left: 5%;
+    }
+
+    #home_btn {
+        width: 150px;
+    }
+
+    fieldset {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        font-size: xx-small;
+        display: flex;
+        flex: row;
+        justify-content: center;
+    }
+    #header h1 {
+        margin-left: 15px;
+    }
+    #home_btn {
+        width: fit-content;
+    }
+    #home_btn img{
+        width: 20px;
+        margin: 5px;
+    }
+
+    fieldset {
+        font-size: small;
+        width: 80%;
+    }
+    fieldset #sliders {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    input[type="range"] {
+        appearance: none;
+        height: 5px;
+        width: 100%;
+        border-radius: 50px;
+        background: linear-gradient(to right, black 0%, gray 0%);
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        border: 2px solid black;
+        background-color: gray;
+    }
+
+    .ideology_pie {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    fieldset {
+        font-size: xx-small;
+    }
+
+    .ideology_pie {
+        height: 70px;
+        width: 70px;
+    }
+}

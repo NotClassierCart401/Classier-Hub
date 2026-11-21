@@ -64,7 +64,7 @@ input[type="file"] {
 }
 
 label[for="uploadaixml"] {
-    content: url(../images/upload.svg);
+    content: url("../images/upload.svg");
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 7px;
