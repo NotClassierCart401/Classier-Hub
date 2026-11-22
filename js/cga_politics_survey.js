@@ -1,3 +1,5 @@
+var submit_btn = document.getElementById("submitlabel")
+
 var form_fields = document.querySelectorAll("fieldset");
 var fieldset_values = {}
  
@@ -98,7 +100,12 @@ document.addEventListener("DOMContentLoaded", function () {
             })
         
         if (can_submit == false) {
-            alert("All values must add up to 100 for each question!")
+            //alert("All values must add up to 100 for each question!")
+            var submit_btn_og_text = submit_btn.innerHTML
+            submit_btn.innerHTML = "All totals must be 100!"
+            setTimeout(function() {
+                submit_btn.innerHTML = submit_btn_og_text
+            }, 3000)
         } else {
             const formBody = new URLSearchParams()
             var i = 0

@@ -151,18 +151,24 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 
 input[type="submit"] {
+    display: none;
+}
+label[for="submit"] {
     width: 250px;
     height: 65px;
     margin: 10px;
+    cursor: pointer;
     color: white;
     font-size: large;
+    text-align: center;
+    align-content: center;
     background-color: var(--cls-header);
     border-radius: 100px;
     border: 3px solid hsl(210, 30%, 10%);
     transition: 0.2s ease-in-out;
 }
 
-input[type="submit"]:hover {
+label[for="submit"]:hover {
     filter: brightness(1.5);
 }
 
@@ -188,7 +194,7 @@ input[type="submit"]:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     #header {
         font-size: xx-small;
         display: flex;
@@ -201,9 +207,13 @@ input[type="submit"]:hover {
     #home_btn {
         width: fit-content;
     }
-    #home_btn img{
+    #home_btn img {
         width: 20px;
         margin: 5px;
+    }
+
+    form {
+        width: 70%;
     }
 
     fieldset {
@@ -241,12 +251,20 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 555px) {
+    form {
+        width: 95%;
+    }
+
     fieldset {
         font-size: xx-small;
     }
 
     .ideology_pie {
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
+    }
+
+    label[for="submit"] {
+        scale: 0.7;
     }
 }
